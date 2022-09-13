@@ -1,0 +1,5 @@
+package com.masai.second;
+
+public interface ExampleInterface1 {
+
+}

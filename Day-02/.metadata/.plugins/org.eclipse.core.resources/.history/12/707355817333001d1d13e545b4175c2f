@@ -1,0 +1,16 @@
+package com.masai.fourth;
+
+public class Test {
+	int a,b;
+	
+	Test(){
+		this(2, 4);
+	}
+
+	Test(int a, int b){
+		this();
+	}
+    public static void main(String[] args) {
+       Test a = new Test();
+    }
+}

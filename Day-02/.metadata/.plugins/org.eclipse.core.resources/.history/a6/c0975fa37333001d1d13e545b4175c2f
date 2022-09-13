@@ -1,0 +1,26 @@
+package com.masai.fourth;
+
+public class Test {
+	
+	class Test {
+	int a,b;
+	
+	// below code will give recursive constructor invocation error
+	/*
+	 * because first deafult constructor will be invoked then in constructor there is this keyword
+	 * with parameter are written so parameterize constructor will invoked and in parameterize 
+	 * constructor using this keyword with zero argument are written, so it will invoked default 
+	 * constructor and this process will run recursively so, compiler will give this error*/
+//	Test(){
+//		this(2, 4);
+//	}
+//
+//	Test(int a, int b){
+//		this();
+//	}
+//	
+//    public static void main(String[] args) {
+//       Test a = new Test();
+//    }
+	} 
+}

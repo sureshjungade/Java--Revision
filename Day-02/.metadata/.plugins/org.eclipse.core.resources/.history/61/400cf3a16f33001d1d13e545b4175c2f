@@ -1,0 +1,14 @@
+package com.masai.second;
+
+public interface ExampleInterface1 {
+
+	int value1 = 10;
+	public int value2 = 15;
+	
+	public static int value3 = 20;
+	
+	public static final int value4 = 25;
+	
+	private int value5 = 10;// this line will give error, because in interface, constatnts should
+							// public static final other than that compiler will give error.
+}

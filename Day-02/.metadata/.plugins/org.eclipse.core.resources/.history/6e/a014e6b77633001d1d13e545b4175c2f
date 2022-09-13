@@ -1,0 +1,16 @@
+package com.masai.first;
+
+public class First {
+	int x = 10;
+	//Can super class reference variable can hold an object of sub class? Give Examples
+	
+	public static void main(String[] args) {
+		First superclass = new Second();
+		System.out.println(superclass.x);
+	}
+	
+}
+
+class Second extends First{
+	int x = 15;
+}

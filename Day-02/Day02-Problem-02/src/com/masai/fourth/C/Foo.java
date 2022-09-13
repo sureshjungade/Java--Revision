@@ -1,0 +1,33 @@
+package com.masai.fourth.C;
+
+/*
+ * in below code Bar class extending the Foo class, means FOO is a super class of Bar class(sub
+ * class) so, when we are creating the object and call the doIt method with string value but in
+ * bar class doIt method with string value is not present so, it will go to the super class
+ * and he found the doIt method with string value, so he called that method and get the output B.
+ * we can access the method of a super classes from sub classes.*/
+
+public class Foo{
+	public void doIt(int number){
+		System.out.println("A");
+	}
+
+	public void doIt(String string){
+		System.out.println("B");
+	}
+	
+	public static void main(String[] args) {
+		Bar x = new Bar();
+		x.doIt("hello");
+	}
+}
+
+class Bar extends Foo{
+	public void doIt(float number){
+		System.out.println("C");
+	}
+	
+	
+}
+
+

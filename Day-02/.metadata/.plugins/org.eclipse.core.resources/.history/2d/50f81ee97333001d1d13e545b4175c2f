@@ -1,0 +1,17 @@
+package com.masai.fourth;
+
+public class B {
+
+	Class Animal(){
+
+		String name;
+
+		Animal(){
+			this.name = "Lion"; 
+		}
+
+		public Animal(String name){
+			this.name = name;
+		}
+	}
+}
