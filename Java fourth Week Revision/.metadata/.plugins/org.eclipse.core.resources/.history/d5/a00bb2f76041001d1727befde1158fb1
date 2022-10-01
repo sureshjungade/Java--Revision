@@ -1,0 +1,21 @@
+package com.masai.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.masai.model.Book;
+
+@RestController
+public class BookController {
+
+	@Autowired
+	private Book book;
+	
+	@GetMapping("/bookservice/books")
+	public String getBookDetails() {
+		
+		
+	}
+	
+}

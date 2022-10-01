@@ -1,0 +1,23 @@
+package com.masai.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.masai.model.Book;
+
+
+public interface BookService {
+
+	
+	
+	
+	public List<Book> getBooks();
+	
+	public Book getBooksById(Integer id);
+	
+	public String addBooks(Book book);
+	
+	public String deleteBookById(Integer id);
+}

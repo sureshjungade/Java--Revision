@@ -1,0 +1,31 @@
+package com.masai.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.masai.model.Book;
+import com.masai.repository.BookDao;
+
+@Service
+public class BookServiceImpl implements BookService{
+
+	@Autowired
+	private BookDao bookdao;
+	
+	@Override
+	public List<Book> getBooks() {
+
+		return bookdao.findAll();
+		 
+	}
+
+	@Override
+	public String addBooks(Book book) {
+		
+		return null;
+	}
+	
+
+}

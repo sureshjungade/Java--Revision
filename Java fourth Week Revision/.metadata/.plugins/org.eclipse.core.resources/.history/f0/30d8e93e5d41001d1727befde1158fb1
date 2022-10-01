@@ -1,0 +1,18 @@
+package com.masai.model;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class Book {
+
+	
+	Integer BookId;
+	String name;
+	String author;
+	String publication;
+	String category;
+	Integer pages;
+	Integer price;
+	
+	
+}

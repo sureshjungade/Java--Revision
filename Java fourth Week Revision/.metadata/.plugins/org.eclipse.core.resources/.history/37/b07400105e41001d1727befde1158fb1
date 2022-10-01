@@ -1,0 +1,26 @@
+package com.masai.model;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Book {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Integer BookId;
+	private String name;
+	private String author;
+	private String publication;
+	private String category;
+	private Integer pages;
+	private Integer price;
+	
+	
+	private List<Book> books;
+	
+}
